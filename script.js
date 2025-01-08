@@ -1,12 +1,9 @@
 //your JS code here. If required.
-var selectEelement = document.getElementById("colorSelect");
-var removeButton = document.getElementById("removeButton");
+let color = document.querySelector("#colorSelect");
+let removeButton = document.querySelector("#removeButton");
 
-// we will add event listner on remove button
-removeButton.addEventListener("click", function() {
-	var selectedColor = selectEelement.selectedColor; // it will select color
+removeButton.addEventListener("click", (e) => {
+	let selectedColor = color.selectedIndex;
 
-	// now we remove selected color;
-	selectEelement.remove(selectedColor);
-
+	color.remove(selectedColor);
 });
