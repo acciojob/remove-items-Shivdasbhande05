@@ -3,7 +3,7 @@ var selectEelement = document.getElementById("colorSelect");
 var removeButton = document.getElementById("removeButton");
 
 // we will add event listner on remove button
-removeButton.addEventListner("click", function() {
+removeButton.addEventListener("click", function() {
 	var selectedColor = selectEelement.selectedColor; // it will select color
 
 	// now we remove selected color;
